@@ -21,6 +21,7 @@
 		CD43294D24E4B2E500257988 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = CD43294C24E4B2E500257988 /* menu.json */; };
 		CD43294F24E4BFEB00257988 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43294E24E4BFEB00257988 /* ItemRow.swift */; };
 		CD7F1F7824E5B69B00E2B986 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F1F7724E5B69B00E2B986 /* ItemDetail.swift */; };
+		CD7F1F7A24E5C19200E2B986 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F1F7924E5C19200E2B986 /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CD43294C24E4B2E500257988 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		CD43294E24E4BFEB00257988 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		CD7F1F7724E5B69B00E2B986 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		CD7F1F7924E5C19200E2B986 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				CD43291E24E4B1F000257988 /* Preview Content */,
 				CD43294E24E4BFEB00257988 /* ItemRow.swift */,
 				CD7F1F7724E5B69B00E2B986 /* ItemDetail.swift */,
+				CD7F1F7924E5C19200E2B986 /* OrderView.swift */,
 			);
 			path = iDine;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				CD43294F24E4BFEB00257988 /* ItemRow.swift in Sources */,
 				CD43294A24E4B2B500257988 /* Order.swift in Sources */,
 				CD7F1F7824E5B69B00E2B986 /* ItemDetail.swift in Sources */,
+				CD7F1F7A24E5C19200E2B986 /* OrderView.swift in Sources */,
 				CD43291B24E4B1EB00257988 /* ContentView.swift in Sources */,
 				CD43294724E4B2AD00257988 /* Helper.swift in Sources */,
 			);
