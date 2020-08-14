@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD20444D24E70699002A4675 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20444C24E70699002A4675 /* CheckoutView.swift */; };
 		CD43291724E4B1EB00257988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43291624E4B1EB00257988 /* AppDelegate.swift */; };
 		CD43291924E4B1EB00257988 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43291824E4B1EB00257988 /* SceneDelegate.swift */; };
 		CD43291B24E4B1EB00257988 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43291A24E4B1EB00257988 /* ContentView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD20444C24E70699002A4675 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		CD43291324E4B1EB00257988 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD43291624E4B1EB00257988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD43291824E4B1EB00257988 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				CD43294E24E4BFEB00257988 /* ItemRow.swift */,
 				CD7F1F7724E5B69B00E2B986 /* ItemDetail.swift */,
 				CD7F1F7924E5C19200E2B986 /* OrderView.swift */,
+				CD20444C24E70699002A4675 /* CheckoutView.swift */,
 			);
 			path = iDine;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD43294B24E4B2B500257988 /* Menu.swift in Sources */,
+				CD20444D24E70699002A4675 /* CheckoutView.swift in Sources */,
 				CD43291724E4B1EB00257988 /* AppDelegate.swift in Sources */,
 				CD43291924E4B1EB00257988 /* SceneDelegate.swift in Sources */,
 				CD43294F24E4BFEB00257988 /* ItemRow.swift in Sources */,
