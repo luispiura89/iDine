@@ -10,6 +10,7 @@ import SwiftUI
 
 class Order: ObservableObject {
     @Published var items = [MenuItem]()
+    @Published var canceled = false
 
     var total: Int {
         if items.count > 0 {

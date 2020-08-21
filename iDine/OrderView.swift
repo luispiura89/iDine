@@ -13,28 +13,41 @@ struct OrderView: View {
     @EnvironmentObject var order: Order
     
     var body: some View {
-        NavigationView {
-            List {
-                Section {
-                    ForEach(order.items) { item in
-                        HStack {
-                            Text(item.name)
-                            Spacer()
-                            Text("$\(item.price)")
+        Group {
+            if order.canceled {
+                ContentView()
+            } else {
+                NavigationView {
+                    List {
+                        Section {
+                            ForEach(order.items) { item in
+                                HStack {
+                                    Text(item.name)
+                                    Spacer()
+                                    Text("$\(item.price)")
+                                }
+                            }
+                            .onDelete(perform: removeItems(at:))
+                        }
+                        
+                        Section {
+                            NavigationLink(destination: CheckoutView()) {
+                                Text("Order")
+                            }
+                        }.disabled(order.items.isEmpty)
+                        
+                        Section {
+                            Button("Cancel") {
+                                self.order.canceled.toggle()
+                                self.order.items = []
+                            }
                         }
                     }
-                    .onDelete(perform: removeItems(at:))
+                    .navigationBarTitle("Order")
+                    .listStyle(GroupedListStyle())
+                    .navigationBarItems(trailing: EditButton())
                 }
-                
-                Section {
-                    NavigationLink(destination: CheckoutView()) {
-                        Text("Order")
-                    }
-                }.disabled(order.items.isEmpty)
             }
-            .navigationBarTitle("Order")
-            .listStyle(GroupedListStyle())
-            .navigationBarItems(trailing: EditButton())
         }
     }
     

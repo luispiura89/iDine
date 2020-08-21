@@ -29,6 +29,7 @@ struct ItemDetail: View {
             Button("Order This") {
                 self.order.add(item: self.item)
             }.font(.headline)
+                .foregroundColor(Color("Blue"))
             
             Spacer()
         }

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CheckoutView: View {
     @EnvironmentObject var order: Order
+    @ObservedObject private var keyboard = KeyboardResponder()
     
     static let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
     static let tipAmounts = [10, 15, 20, 25, 0]
@@ -40,7 +41,9 @@ struct CheckoutView: View {
                 }
                 
                 if addLoyaltyDetails {
-                    TextField("Enter your iDine ID", text: self.$loyaltyNumber)
+                    TextField("Enter your iDine ID", text: self.$loyaltyNumber) {
+                        self.endEditing(true)
+                    }
                 }
             }
             
@@ -59,6 +62,8 @@ struct CheckoutView: View {
                 }
             }
         }
+        .offset(y: -keyboard.currentHeight)
+        .padding(.top, keyboard.currentHeight)
         .navigationBarTitle(Text("Payment"), displayMode: .inline)
         .alert(isPresented: $showingPaymentAlert) {
             Alert(title: Text("Order confirmed"),
@@ -74,5 +79,11 @@ struct CheckoutView_Previews: PreviewProvider {
             CheckoutView()
                 .environmentObject(Order())
         }
+    }
+}
+
+extension View {
+    func endEditing(_ force: Bool) {
+        UIApplication.shared.windows.forEach { $0.endEditing(force)}
     }
 }

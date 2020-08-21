@@ -24,6 +24,7 @@
 		CD7F1F7824E5B69B00E2B986 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F1F7724E5B69B00E2B986 /* ItemDetail.swift */; };
 		CD7F1F7A24E5C19200E2B986 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F1F7924E5C19200E2B986 /* OrderView.swift */; };
 		CD7F1F7C24E5C3EE00E2B986 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F1F7B24E5C3EE00E2B986 /* AppView.swift */; };
+		CDE3C27C24F03938003D9082 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3C27B24F03938003D9082 /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CD7F1F7724E5B69B00E2B986 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		CD7F1F7924E5C19200E2B986 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		CD7F1F7B24E5C3EE00E2B986 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		CDE3C27B24F03938003D9082 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				CD7F1F7724E5B69B00E2B986 /* ItemDetail.swift */,
 				CD7F1F7924E5C19200E2B986 /* OrderView.swift */,
 				CD20444C24E70699002A4675 /* CheckoutView.swift */,
+				CDE3C27B24F03938003D9082 /* KeyboardResponder.swift */,
 			);
 			path = iDine;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				CD43291724E4B1EB00257988 /* AppDelegate.swift in Sources */,
 				CD43291924E4B1EB00257988 /* SceneDelegate.swift in Sources */,
 				CD43294F24E4BFEB00257988 /* ItemRow.swift in Sources */,
+				CDE3C27C24F03938003D9082 /* KeyboardResponder.swift in Sources */,
 				CD43294A24E4B2B500257988 /* Order.swift in Sources */,
 				CD7F1F7824E5B69B00E2B986 /* ItemDetail.swift in Sources */,
 				CD7F1F7A24E5C19200E2B986 /* OrderView.swift in Sources */,
